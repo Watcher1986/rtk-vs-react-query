@@ -7,7 +7,61 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+input,
+button {
+  font-size: 1rem;
+}
+
+.todos {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  row-gap: 0.5rem;
+}
+.todos input {
+  padding-top: 0.5rem;
+}
+.todos input[type='checkbox'] {
+  cursor: pointer;
+  zoom: 2;
+}
+.todos button {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.add {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.add input {
+  width: 100%;
+  margin-right: 1rem;
+}
+.add button {
+  min-width: 20%;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  padding: 4px 12px;
+  margin: auto;
 }
